@@ -69,26 +69,13 @@ void loop()
  lightLevel = map(lightLevel, 0, 900, 0, 255); 
          //adjust the value 0 to 900 to
          //span 0 to 255
-         
-// lightLevel = constrain(lightLevel, 0, 255);//make sure the 
-//                                           //value is betwween 
-//                                           //0 and 255
-//  
-//  Serial.print(lightLevel);
-//  if(lightLevel<100){
-//      crossFade(white);
-//      crossFade(blue);
-//  }
-//  else if(lightLevel>100){
-//      crossFade(white);
-//      crossFade(yellow);
-//  }
-//  analogWrite(ledPin, lightLevel);  //write the value
 
-      crossFade(white);
-      crossFade(blue);
-      crossFade(white);
-      crossFade(yellow);
+   crossFade(white);
+  crossFade(blue);
+  
+  crossFade(white);
+  crossFade(yellow);
+  crossFade(white);
   
   if (repeat) { // Do we loop a finite number of times?
     j += 1;

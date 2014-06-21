@@ -55,12 +55,12 @@ void loop() {
       analogWrite(BLUE_LED_PIN,blueIntensity);
       delay(DISPLAY_TIME);
     }
-    for(redIntensity = 255,greenIntensity = 255; redIntensity >= 0 && greenIntensity >= 0; greenIntensity-=1,redIntensity-=1){
+    for(redIntensity = 255,greenIntensity = 255; redIntensity >= 0,greenIntensity >= 0; greenIntensity-=1,redIntensity-=1){
       analogWrite(GREEN_LED_PIN,greenIntensity);
       analogWrite(RED_LED_PIN,redIntensity);
       delay(DISPLAY_TIME);
     }
-    for(redIntensity = 0,greenIntensity = 0; redIntensity <= 255 && greenIntensity <= 255; greenIntensity+=1,redIntensity+=1){
+    for(redIntensity = 0,greenIntensity = 0; redIntensity <= 255greenIntensity <= 255; greenIntensity+=1,redIntensity+=1){
       analogWrite(GREEN_LED_PIN,greenIntensity);
       analogWrite(RED_LED_PIN,redIntensity);
       delay(DISPLAY_TIME);
