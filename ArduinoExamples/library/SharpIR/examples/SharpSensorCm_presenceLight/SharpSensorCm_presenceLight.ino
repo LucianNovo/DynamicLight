@@ -40,7 +40,7 @@ void loop(){
   
   int dis=sharp.distance();  // this returns the distance to the object you're measuring
   
-  if(dis < 50){
+  if(dis < 100){
     digitalWrite(presenceLED, 255);
   }
   else{
