@@ -1,25 +1,38 @@
 /*
-"Breathing sleep LED, like on a Mac.
-Jeremy Saglimbeni 2011
-thecustomgeek.com
+Modified Sleep_LED made by Jeremy Saglimbeni 2011 thecustomgeek.com
+but originally pioneered by Apple
 
-LED is attached to pin 11 in series with a 5.6K resistor
+
+Redesigned in California by Lucian Novosel
 */
+
+#include <Adafruit_NeoPixel.h>
+
+
 int i = 0;
-int pinLED = 8;
+int LED_pin;
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(20, LED_pin, NEO_GRB + NEO_KHZ800);
+
 void setup() { // bring the LED up nicely from being off
-  pinMode(8, OUTPUT);
+  Serial.begin(9600);
+  strip.show();
   for(i = 0 ; i <= 15; i+=1)
   {
-    analogWrite(pinLED, i);
+    strip.setPixelColor(i,strip.Color(i, i, i));
+    Serial.println(i);
+    strip.show();
+//    analogWrite(LED_pin, i);
     delay(5);
   }
 }
+
 void loop()
 {
   for(i = 15 ; i <= 255; i+=1)
   { 
-    analogWrite(pinLED, i);
+    strip.setPixelColor(i,strip.Color(i, i, i));
+    Serial.println(i);
+    strip.show();
     if (i > 150) {
       delay(4);
     }
@@ -44,7 +57,9 @@ void loop()
   }
   for(i = 255; i >=15; i-=1)
   {
-    analogWrite(pinLED, i);
+    strip.setPixelColor(i,strip.Color(i, i, i));
+    Serial.println(i);
+    strip.show();
     if (i > 150) {
       delay(4);
     }
@@ -69,3 +84,4 @@ void loop()
   }
   delay(970);
 }
+

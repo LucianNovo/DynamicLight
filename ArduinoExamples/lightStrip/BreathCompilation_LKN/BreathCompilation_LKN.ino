@@ -48,6 +48,8 @@ void gradient(){
   strip.show();
 }
 
+
+// simple set value transition
 void breathIn(){
   int i;
   while(repeat == true){
@@ -61,6 +63,8 @@ void breathIn(){
     }
   }  
 }
+
+//
 
 // Fill the dots one after the other with a color
 void colorWipe(uint32_t c, uint8_t wait) {

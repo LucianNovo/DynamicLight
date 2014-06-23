@@ -1,5 +1,7 @@
 // This is a simple breathing strip of LED.
 // Customize using the Run and LED parameters below.
+// https://github.com/cloudwalking/Breathe/blob/master/breathe.ino
+// Code written by Reed Morse
 
 #include <SPI.h>
 #include "LPD8806.h"
