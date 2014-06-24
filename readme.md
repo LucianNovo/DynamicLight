@@ -7,7 +7,7 @@ This repository catalogues a few circuits I made with Arduino. In the summer of 
 
 [![Breathing Light](https://raw.githubusercontent.com/LucianNovo/DynamicLight/master/ArduinoExamples/lightStrip/progress/customGeek.gif "Breathing Light")](https://www.youtube.com/watch?v=YoK2YnTQCqk)
 
-[![Motion Sensor](https://raw.githubusercontent.com/LucianNovo/DynamicLight/master/ArduinoExamples/IR_sensor/progress/IRsensor.gif "Motion Sensor")](https://www.youtube.com/watch?v=hVRZTDxuRS)
+[![Motion Sensor](https://raw.githubusercontent.com/LucianNovo/DynamicLight/master/ArduinoExamples/IR_sensor/progress/IRsensor.gif "Motion Sensor")](https://www.youtube.com/watch?v=hVRZTDxuRS8)
 
 
 At the same time I applied for a job at the CLTC, and wanted to show-off my prototyping chops. 
