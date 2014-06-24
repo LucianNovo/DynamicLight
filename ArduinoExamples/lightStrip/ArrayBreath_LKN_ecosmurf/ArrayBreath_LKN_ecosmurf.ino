@@ -13,25 +13,29 @@ int fadelvl[]={255, 255, 255, 255, 255, 255, 255, 255, 252, 247, 235, 235, 230, 
 int repeat = 8;
 
 void setup() {
+  strip.show();
   pinMode(8, OUTPUT);//11 is output pin
   Serial.begin(9600);
 }
 
-void loop() {
+void loop(){
   int i;
   while(repeat > 0){
     for (i = 0; i < 299; i = i + 1) {
       //sets the color from the array.
-      strip.setPixelColor(i,strip.Color(fadelvl[i], fadelvl[i], fadelvl[i]));
-      
+      for(int j = 0; j<strip.numPixels(); j++){
+        strip.setPixelColor(j,strip.Color(fadelvl[i], fadelvl[i], fadelvl[i]));
+      }
+
+      //standard logging
       Serial.println("The intensity level.");
       Serial.println(fadelvl[i]);
-      
+
       //this makes the entire effect choppy
+      strip.show();
       delay (20);
-      trip.setPixelColor(i, c);
-      
-      repeat--; //decrement the amount of repitions
     }
+    
+  repeat--; //decrement the amount of repitions
   }
 }
