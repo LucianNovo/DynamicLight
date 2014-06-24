@@ -1,6 +1,6 @@
 /*
 Mac-style light transitions proposed Disqus contributor ecosmurf
-but originally visualized by Appple
+inspired by Appple
 
 Redesigned in California by Lucian Novosel
 */
