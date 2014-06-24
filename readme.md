@@ -1,5 +1,4 @@
 #Light projects using Arduino
-============
 
 ###Hi! 
 This repository catalogues a few circuits I made with Arduino. 
