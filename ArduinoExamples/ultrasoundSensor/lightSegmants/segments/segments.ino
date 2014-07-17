@@ -11,11 +11,11 @@ Redesigned in California by Lucian Novosel
 
 
 int i = 0;
-int LED_pin = 8;
+int LED_pin = 2;
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(60, LED_pin, NEO_GRB + NEO_KHZ800);
 
 void setup() { // bring the LED up nicely from being off
-  pinMode(8, OUTPUT);//11 is output pin
+  pinMode(2, OUTPUT);//11 is output pin
   Serial.begin(9600);
   strip.show();
 }
